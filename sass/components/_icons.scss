@@ -1,0 +1,26 @@
+ion-icon
+{
+    font-size:56px;
+    color:$color-white;
+    transition:color .3s;
+    vertical-align: middle;
+     @include respond(tab-port)
+       {
+           font-size:40px;
+       }
+     &[name="logo-linkedin"]:hover
+    {
+         color: #0e76a8;
+    }
+     &[name="logo-github"]:hover
+    {
+         color: #6cc644;
+    }
+    &[name="mail"]:hover
+    {
+         color: #D44638;
+    }
+    
+    
+}
+

@@ -1,0 +1,85 @@
+.work-box
+{
+    width:70%;
+    height:auto;
+    margin:3rem auto 0 auto;
+    padding:2rem 5rem;
+    transition:all .3s;
+    cursor:pointer;
+    box-shadow: 0 1.5rem 4rem rgba(0,0,0,0.15);
+    @include respond(tab-land)
+    {
+        width:80%;
+    }
+    &:hover
+    {
+        transform:scale(1.1);
+    }
+    ion-icon
+    {
+        color:$color-white;
+        font-size:40px;
+        position:absolute;
+        top:50%;
+        left:50%;
+        transform:translate(-50%,-50%);
+         @include respond(tab-port)
+    {
+        font-size:32px;
+    }
+    }
+    .icon-work-box
+    {
+        width:7rem;
+        height:7rem;
+        border-radius:50%;
+        position:relative;
+        background-color: $color-dark-grey;
+        margin:0 auto;
+         @include respond(tab-port)
+    {
+        width:6rem;
+        height:6rem;
+    }
+    }
+    p
+    {
+        margin: 2rem 0;
+    }
+    
+    
+}
+.work-box--1
+{
+    background-color:#333;
+    color:$color-white;
+    text-align: center;
+}
+.work-box--2
+{
+    background-color:$color-white;
+    text-align: center;
+     .icon-work-box
+    {
+        background-color:#333;
+
+    }
+}
+.work-box--3
+{
+    background-color:$color-tertiary;
+    text-align: center;
+    .icon-work-box
+    {
+        background-color:#333;
+
+    }
+}
+.js--wp-2
+{
+    opacity:0;
+}
+.js--wp-2 .animated
+{
+    opacity:1;
+}

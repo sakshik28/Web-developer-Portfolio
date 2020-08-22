@@ -1,0 +1,234 @@
+.navigation
+{
+   padding:2rem 4rem; 
+     z-index:1000;
+    position:absolute;
+    width:100%;
+     @include respond(tab-port)
+       {
+            padding:2rem;
+    }
+}
+    .logo-box
+   {
+      float:left;
+        height: 60px;
+       margin-top: 1.5rem;
+       @include respond(phone)
+       {
+            margin-top: 0;
+    }
+        .logoblack
+       {
+           display:none;
+       }
+       img
+       {
+         height:100%;
+       width: auto; 
+       }
+       @include respond(tab-port)
+       {
+            height: 40px;
+          
+           
+       }
+       
+       
+    }
+    .main-nav
+    {
+        float:right;
+        list-style:none;
+        margin-top: 3rem;
+         @include respond(tab-port)
+       {
+            display:none;
+           float:left;
+           margin-left:2rem;
+       }
+          @include respond(phone)
+       {
+           margin-left:0;
+       }
+        li {
+            display:inline-block;
+             @include respond(tab-port)
+           {
+              display:block;
+               padding:2rem 0;
+               
+              
+           }
+             @include respond(phone)
+           {
+             padding:0;
+               
+              
+           }
+             
+            a:link,
+            a:visited
+            {
+                text-decoration: none;
+                font-size: 2rem;
+            font-weight: 400;
+            padding: 0 4rem;
+            color: $color-white;
+            text-decoration: none;
+            position:relative;
+            text-transform: uppercase;
+                z-index:0;
+                @include respond(phone)
+                {
+                    padding: 0 2rem;
+              }
+                
+                
+            &:before,
+             &:after
+            {
+              position: absolute;
+               top: 12px;
+               left: 50%;
+                width: 50px;
+                 height: 50px;
+                 border: 3px solid $color-tertiary;
+                 transform: translateX(-50%) translateY(-50%) scale(0.8);
+                border-radius: 50%;
+               background: transparent;
+               content: "";
+               opacity: 0;
+                transition: all 0.3s;
+                z-index: -1;
+                @include respond(tab-port)
+           {
+              display:none;
+           }
+                }
+                
+                &:after
+                {
+                  border-width: 2px;
+                   transition: all 0.4s;
+                }
+                 &:hover:before
+                {
+                     opacity: 1;
+                     transform: translateX(-50%) translateY(-50%) scale(1);
+                 }
+
+                  &:hover:after
+                  {
+                    opacity: 1;
+                    transform: translateX(-50%) translateY(-50%) scale(1.3);
+                  }
+              }
+        }
+        
+       
+}
+.mobile-nav-icon
+{
+    float:right;
+    cursor:pointer;
+    display:none;
+   
+    
+     
+    @include respond(tab-port)
+    {
+        display:inline-block;
+        
+    }
+    i {
+        color:white;
+        font-size:4.5rem;
+          @include respond(phone)
+       {
+           font-size: 3rem;
+       }
+    }
+
+}
+
+        
+  .sticky-nav
+{
+    position:fixed;
+    left:0;
+    top:0;
+    width:100%;
+    background-color:rgba(255,255,255,.99);
+    box-shadow: 0 2px 2px #efefef;
+    z-index:1000;
+    padding:1rem 3rem; 
+     @include respond(tab-port)
+       {
+            padding:1rem 2rem;
+          
+           
+       }
+    
+    .logo-box
+   {
+      float:left;
+        height: 60px;
+       margin-top: 1rem;
+        @include respond(tab-port)
+       {
+            height: 40px;
+          
+           
+       }
+       @include respond(phone)
+       {
+            margin-top: 0;
+        }
+       img
+       {
+         height:100%;
+       width: auto; 
+       }
+       .logowhite
+       {
+           display:none;
+       }
+       .logoblack
+       {
+           display:inline-block;
+       }
+       
+    }
+    
+    .main-nav
+    { 
+        margin-top: 2rem;
+        li {
+            a:link,
+            a:visited
+            {
+             color: $color-dark-grey;
+            
+                
+            }
+        }
+    }
+     
+
+.mobile-nav-icon 
+{
+    @include respond(tab-port)
+    {
+        
+    }
+    i
+        {
+            color:black;
+        }
+}
+}
+
+                
+          
+    

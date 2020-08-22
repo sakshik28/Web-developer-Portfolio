@@ -1,0 +1,40 @@
+.header
+{
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+        url(../img/hero.jpg);
+    height:120vh;
+    width:100%;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position:relative;
+    z-index:3;
+    clip-path: polygon(0 0, 100% 0%, 100% 85%, 50% 97%, 0 85%);
+         @media (min-width:1024px) and (min-height:1366px)  
+    {
+        height:75vh;
+    }
+     @include respond(tab-port)
+        {
+            height:85vh;
+        }
+    
+}
+.hero-text-box
+{
+    position:absolute;
+    top:50%;
+    left:50%;
+    width:95%;
+    transform:translate(-50%,-50%);
+    text-align: center;
+    span {
+      color:$color-tertiary;  
+    }
+    @include respond(tab-port)
+        {
+            padding:1rem;
+        }
+   
+   
+}

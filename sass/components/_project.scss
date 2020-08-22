@@ -1,0 +1,52 @@
+.project-box
+{
+    width:100%;
+     display:inline-block;
+    text-align: center;
+    padding:2rem;
+    
+    
+    img
+    {
+        width:38rem;
+        height:auto;
+        margin-bottom: 4rem;
+        @include respond(phone)
+        {
+            width:34rem;
+        }
+        
+    }
+    .image4
+    {
+        margin-bottom:2.5rem;
+    }
+    a:not(last-child)
+    {
+        margin-right: 2rem;
+        @include respond(phone)
+        {
+            margin: 0 2rem 2rem 0;
+           
+        }
+    }
+    
+}
+.js--wp-3
+{
+    opacity:0;
+}
+.js--wp-3 .animated
+{
+    opacity:1;
+}
+.js--wp-4
+{
+    opacity:0;
+}
+.js--wp-4 .animated
+{
+    opacity:1;
+}
+
+

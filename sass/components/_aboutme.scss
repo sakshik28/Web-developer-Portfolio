@@ -1,0 +1,40 @@
+.circle-box
+{
+    position:absolute;
+    width:20rem;
+    height:20rem;
+    border-radius:50%;
+    background-color:$color-primary;
+    z-index:-2;
+     left:0;
+    top:-6rem;
+    @include respond(tab-port)
+    {
+         width:15rem;
+        height:15rem;
+    }
+     @include respond(phone)
+    {
+        display:none
+    }
+    
+    &:after
+    {
+        content:"";
+        position:absolute;
+        width:70%;
+        height:70%;
+        left:12rem;
+        top:-1rem; 
+        background-color:$color-tertiary;
+        border-radius:50%;
+    }
+}
+
+.box
+{
+    display:inline-block;
+    width:100%;
+     
+    
+}

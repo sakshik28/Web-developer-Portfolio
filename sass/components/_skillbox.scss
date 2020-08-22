@@ -1,0 +1,61 @@
+.skill-box
+{
+    background-color:$color-light-grey;
+   width:100%;
+    height:auto;
+    padding:1rem .5rem;
+    margin: 4rem auto 0 auto;
+    @include respond(tab-port)
+        {
+            width:70%;
+        }
+    @include respond(phone)
+        {
+            width:100%;
+        }
+    p
+    {
+      margin-left: 1rem;
+        display: inline-block;
+        vertical-align: middle;
+        @include respond(tab-land)
+        {
+            display: block;
+        }
+        
+    }
+    ion-icon
+    {
+        color:$color-dark-grey;
+        font-size: 48px;
+         @include respond(tab-land)
+        {
+            display: block;
+            margin:0 auto;
+        }
+    }
+   
+}
+.skill__icon
+{
+   height:4.8rem;
+    width:5rem;
+    display:inline-block;
+    fill:$color-dark-grey;
+    vertical-align: middle;
+     @include respond(tab-land)
+        {
+            display: block;
+            margin:0 auto;
+            height:5.2rem;
+        }
+    
+}
+.js--wp-1
+{
+    opacity:0;
+}
+.js--wp-1 .animated
+{
+    opacity:1;
+}

@@ -1,0 +1,92 @@
+.footer
+{
+    background-color:$color-dark-grey-2;
+    color:$color-white;
+    padding:10rem 0 20rem 4rem;
+    position:relative;
+    @include respond(tab-port)
+    {
+        padding:4rem 2rem;
+       
+        text-align: center;
+    }
+    ion-icon
+    {
+        font-size:32px;
+        display:inline-block;
+        vertical-align: middle;
+         @include respond(tab-port)
+         {
+             font-size:24px;
+        }
+        
+        &:not(last-child)
+        {
+           margin-right: 4rem; 
+             @include respond(tab-port)
+           {
+             margin-right: 2rem;
+           }
+             
+        }
+    }
+   
+}
+
+ .email-box
+    {
+        float: left;
+        @include respond(tab-port)
+        {
+            display:100%;
+            float:none;
+            margin-bottom: 3rem;
+        }
+        p
+        {
+            display:inline-block;
+            vertical-align: middle;
+            font-size: 1.6rem;
+        }
+    }
+.social-links
+{
+    float:right;
+    @include respond(tab-port)
+        {
+            display:100%;
+            float:none;
+            margin-bottom: 3rem;
+        }
+    
+}
+.copyright-box
+{   display:inline-block;
+    position:absolute;
+    top:40%;
+    left:50%;
+    transform:translateX(-50%);
+     text-align: center;
+    @include respond(tab-port)
+    {
+       position:static;
+        width:100%;
+        transform: translateX(0);
+    }
+    
+    p
+    {
+          font-size: 1.6rem;
+        margin-top: 2rem;
+    }
+    img{
+        height:70px;
+        width:auto;
+         @include respond(tab-port)
+         {
+             height:55px;
+        }
+       
+    }
+  
+}

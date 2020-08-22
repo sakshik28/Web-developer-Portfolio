@@ -1,0 +1,68 @@
+.row
+{
+   max-width:100vw;
+    margin: 0 auto;
+   
+}
+
+.section-about
+{
+    padding:8rem 6rem ;
+    text-align: center;
+    height:auto;
+        position:relative;
+    @include clearfix;
+     @include respond(tab-port)
+       {
+          height:auto;
+            padding:4rem 2rem 8rem 2rem;
+       }
+  
+    .skill-heading
+    {
+       @include respond(tab-port)
+    {
+        margin-top:6rem; 
+    } 
+    }
+}
+.heading-box
+{
+    span
+    {
+        color:$color-tertiary;
+    }
+    margin:0 auto 4rem auto;
+   text-align: center;
+        @include respond(tab-port)
+    {
+         margin:0 auto 2rem auto;
+    }
+    
+    
+     
+}
+.section-what
+{
+    background-color: $color-light-grey;
+    padding:6rem 0;
+}
+.section-project
+{
+   background-color: $color-white;
+   padding:8rem 0;
+    @include respond(tab-port)
+    {
+        padding:4rem 0;
+    }
+    
+}
+.heading
+{
+    text-align: center;
+     span
+    {
+        color:$color-tertiary;
+    }
+    
+}
